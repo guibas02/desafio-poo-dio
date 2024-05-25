@@ -5,7 +5,7 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
 
-public class Devs {
+public class Dev {
     private String nome;
     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
     private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
@@ -33,7 +33,7 @@ public class Devs {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Devs devs = (Devs) o;
+        Dev devs = (Dev) o;
         return Objects.equals(nome, devs.nome) && Objects.equals(conteudosInscritos, devs.conteudosInscritos) && Objects.equals(conteudosConcluidos, devs.conteudosConcluidos);
     }
 
